@@ -34,13 +34,13 @@ else
         exit 1;
 fi;
 
-if [ -f $home/kernels/$os/dtbo.img ]; then
-        mv $home/kernels/$os/dtbo.img $home/dtbo.img
-fi;
+#if [ -f $home/kernels/$os/dtbo.img ]; then
+#        mv $home/kernels/$os/dtbo.img $home/dtbo.img
+#fi;
 
-if [ -f $home/kernels/$os/dtb ]; then
-        mv $home/kernels/$os/dtb $home/dtb
-fi;
+#if [ -f $home/kernels/$os/dtb ]; then
+#        mv $home/kernels/$os/dtb $home/dtb
+#fi;
 split_boot;
 flash_boot;
 flash_dtbo;
